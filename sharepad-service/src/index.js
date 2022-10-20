@@ -5,7 +5,7 @@ app.use(express.static('/sharepad-web'));
 
 const createId = () => {
     const ALPHABET = 'abcdefghijklmopqrstuvwxyz0123456789';
-    const LENGTH = 32;
+    const LENGTH = 6;
     let result = '';
     for (let i = 0; i < LENGTH; ++i) {
         result += ALPHABET[Math.floor(Math.random()*ALPHABET.length)];
