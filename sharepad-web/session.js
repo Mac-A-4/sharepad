@@ -124,5 +124,4 @@ sessionIdSpan.addEventListener('click', () => {
     sessionIdSpan.select();
     sessionIdSpan.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(sessionIdSpan.value);
-    alert("Copied the text: " + sessionIdSpan.value);
 });
