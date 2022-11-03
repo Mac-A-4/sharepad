@@ -1,4 +1,5 @@
 html, body {
+    font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
     padding: 0;
@@ -22,6 +23,8 @@ main {
 textarea {
     display: block;
     flex: 1;
+    background-color: rgb(30,30,30);
+    color:white;
 }
 
 header {
