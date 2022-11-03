@@ -125,3 +125,13 @@ sessionIdSpan.addEventListener('click', () => {
     sessionIdSpan.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(sessionIdSpan.value);
 });
+
+localTextArea.addEventListener('keydown', function(e) {
+    if (e.key == 'Tab') {
+        e.preventDefault();
+        let start = localTextArea.selectionStart;
+        let end = localTextArea.selectionEnd;
+        localTextArea.value = localTextArea.value.substring(0, start) + "\t" + localTextArea.value.substring(end);
+        localTextArea.selectionStart = localTextArea.selectionEnd = start + 1;
+    }
+});
