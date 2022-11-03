@@ -23,3 +23,7 @@ textarea {
     display: block;
     flex: 1;
 }
+
+input {
+    width: 250px;
+}
