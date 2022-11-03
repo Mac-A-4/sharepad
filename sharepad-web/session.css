@@ -24,6 +24,11 @@ textarea {
     flex: 1;
 }
 
+header {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
 input {
     width: 250px;
 }
