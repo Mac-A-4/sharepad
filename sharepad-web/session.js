@@ -17,7 +17,7 @@ if (!SESSION_ID || !USER_ID) {
 }
 
 const sessionIdSpan = document.getElementById('span-session-id');
-sessionIdSpan.innerText = SESSION_ID;
+sessionIdSpan.innerText = (new URL(`connect.html?sessionId=${SESSION_ID}`, document.baseURI)).href;
 
 const selectRemote = document.getElementById('select-remote');
 const localTextArea = document.getElementById('textarea-local');
@@ -119,3 +119,10 @@ setInterval(() => {
         });
     }
 }, 100);
+
+sessionIdSpan.addEventListener('click', () => {
+    sessionIdSpan.select();
+    sessionIdSpan.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(sessionIdSpan.innerText);
+    alert("Copied the text: " + sessionIdSpan.innerText);
+});

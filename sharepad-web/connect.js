@@ -45,5 +45,5 @@ const createName = () => {
         return;
     }
     let userId = (await connectResponse.json()).userId;
-    redirectSession(sessionId, userId);
+    redirectSession(SESSION_ID, userId);
 })();
