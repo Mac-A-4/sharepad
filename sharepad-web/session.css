@@ -25,12 +25,11 @@ textarea {
 }
 
 header {
-    padding-top:10px;
-    padding-bottom:10px;
+    padding: 10px;
 }
 
 input {
-    width: 250px;
+    width: 350px;
 }
 
 textarea, pre {
