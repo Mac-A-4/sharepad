@@ -1,6 +1,6 @@
 
 function redirectSession(sessionId, userId) {
-    window.location.href = `/session.html?sessionId=${sessionId}&userId=${userId}`;
+    window.location.href = `session.html?sessionId=${sessionId}&userId=${userId}`;
 }
 
 async function onConnect(sessionId, name) {

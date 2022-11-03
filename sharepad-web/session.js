@@ -8,7 +8,7 @@ const { sessionId: SESSION_ID, userId: USER_ID } = (function() {
 })();
 
 function redirectIndex() {
-    window.location.href = '/index.html';
+    window.location.href = 'index.html';
 }
 
 if (!SESSION_ID || !USER_ID) {
