@@ -34,7 +34,7 @@ setInterval(() => {
     if (isLocalTextAreaDirty && !isRequestingUpdate) {
         isLocalTextAreaDirty = false;
         isRequestingUpdate = true;
-        fetch('/api/update', {
+        fetch('api/update', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ let isRequestingStatus = false;
 setInterval(() => {
     if (!isRequestingStatus) {
         isRequestingStatus = true;
-        fetch('/api/status', {
+        fetch('api/status', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

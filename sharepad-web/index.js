@@ -4,7 +4,7 @@ function redirectSession(sessionId, userId) {
 }
 
 async function onConnect(sessionId, name) {
-    let connectResponse = await fetch('/api/connect', {
+    let connectResponse = await fetch('api/connect', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ async function onConnect(sessionId, name) {
 }
 
 async function onCreate(name) {
-    let createResponse = await fetch('/api/create', {
+    let createResponse = await fetch('api/create', {
         method: 'POST',
     });
     if (!createResponse.ok) {
