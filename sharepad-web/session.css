@@ -25,6 +25,7 @@ textarea {
     flex: 1;
     background-color: rgb(30,30,30);
     color:white;
+    font-size: 20px;
 }
 
 header {
