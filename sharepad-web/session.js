@@ -137,7 +137,3 @@ localTextArea.addEventListener('keydown', function(e) {
 });
 
 localTextArea.value = '';
-
-for (let i = 0; i < 1000; ++i) {
-    localTextArea.value += `${i+1}:\n`;
-}
