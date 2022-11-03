@@ -135,3 +135,5 @@ localTextArea.addEventListener('keydown', function(e) {
         localTextArea.selectionStart = localTextArea.selectionEnd = start + 1;
     }
 });
+
+localTextArea.value = '';
